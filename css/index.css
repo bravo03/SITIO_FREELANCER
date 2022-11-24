@@ -46,12 +46,17 @@ body {
     border-radius: .5rem;
     width: 90%;
     text-align: center;
+    border: none;
 }
 
 @media (min-width: 768px) {
     .boton {
         width: auto;
     }
+}
+
+.boton:hover{
+    cursor: pointer;
 }
 
 .sombra {
@@ -85,6 +90,24 @@ h3 {
 /*Titulos */
 .titulo span {
     font-size: 2rem;
+}
+
+/* Utilidades */
+.w-100 {
+    width: 100%;
+}
+@media (min-width: 768px) { 
+    .w-100 {
+        width: auto;
+    }
+}
+
+.flex{
+    display: flex;
+}
+
+.alinear-derecha{
+    justify-content: flex-end;
 }
 
 /*Navegacion principal */
@@ -161,8 +184,6 @@ h3 {
 }
 
 /* servicios */
-
-
 @media (min-width: 768px) {
     .servicios {
         display: grid;
@@ -197,4 +218,52 @@ font-weight: 700;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+}
+
+/* Contacto */
+.formulario {
+background-color: var(--gris);
+width: min(600rem, 100%);  /* utiliza el valor mas pequeño */
+margin:0 auto;
+padding: 2rem;
+border-radius: 2rem;
+}
+
+.formulario fieldset{
+    border: none;
+    
+}
+
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primario);
+}
+
+.contenedor-campos{
+}
+
+.campo{
+margin-bottom: 1rem;
+}
+
+.campo label {
+color: white;
+font-weight: 700;
+margin-bottom: .5rem;
+display: block;
+}
+
+.input-text {
+width: 100%;
+border: none;
+padding: 1.5rem;
+border-radius: .5rem;
+}
+
+.enviar .boton {
+    width: 100%;
 }
