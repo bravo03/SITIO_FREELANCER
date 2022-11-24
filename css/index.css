@@ -167,6 +167,34 @@ h3 {
     .servicios {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
     }
 }
 
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio h3 {
+color: var(--secundario);
+font-weight: 700;
+}
+
+.servicio p {
+    line-height: 2;
+    
+}
+
+.servicio .iconos {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    /* alineando verticalmente horizontal centrando */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
